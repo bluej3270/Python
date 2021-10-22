@@ -27,6 +27,8 @@ def numbersToEnglish(num):
             ones = " "
     if not arrNums[1] == 1 and not arrNums[1] == -1:
         tens = nums[arrNums[1] + 7] + " "
+        if arrNums[1] == 0:
+            tens = " "
     if arrNums[1] == 1 and not arrNums[1] == -1:
         tens = numsTeens[arrNums[2] - 1]
     if len(arrNums) >= 3 and not arrNums[0] == -1:
